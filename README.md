@@ -26,7 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
+1.Desktop View
 ![active-states](https://github.com/gauyash/interactive-card/assets/96402498/14ac9294-6d09-4b57-8057-a7ce25534f61)
+
+
+2. Mobile View
 ![mobile-design](https://github.com/gauyash/interactive-card/assets/96402498/1b4f58e9-5c00-4d44-b4b5-5512768b8f43)
 
 
