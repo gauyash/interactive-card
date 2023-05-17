@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/result.js" defer></script>
+    <title>Interactive Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__row row">
+        <div class="container__col container__col--bg">
+          <div class="card card--one">
+            <img src="images/bg-card-back.png" alt="" class="card__img" />
+            <div class="card__details">
+              <p class="color--white ls-2 cvvNum">000</p>
+            </div>
+          </div>
+          <div class="card card--two">
+            <img src="images/bg-card-front.png" alt="" class="card__img" />
+            <div class="card__details row">
+              <div class="row">
+                <div class="circle circle--lg bg--white"></div>
+                <div class="circle circle--sm"></div>
+              </div>
+              <div class="card__details__text">
+                <h1 class="heading--large color--white fw-500 ls-2 cardNum">
+                  0000 0000 0000 0000
+                </h1>
+                <div class="row">
+                  <p class="color--white ls-2 name">Jane Appleseed</p>
+                  <p class="color--white ls-2"><span class="cardMonth">00</span>/<span class="cardYear">00</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__col bg--white">
+            <div class="result row">
+                <img width="80rem" height="80rem" src="images/icon-complete.svg" alt="">
+                <h2 class="heading-large ta--center">Thank You!</h2>
+                <p class="ta--center color--dark-violet">We've added your card details</p>
+                <input
+                type="submit"
+                value="Continue"
+                class="button bg--very-dark-violet color--white"
+              />
+            </div>
+        </div>
+      </div>
+    </div>
+
+  
+  </body>
+</html>

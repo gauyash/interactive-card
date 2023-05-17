@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>Interactive Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__row row">
+        <div class="container__col container__col--bg">
+          <div class="card card--one">
+            <img src="images/bg-card-back.png" alt="" class="card__img" />
+            <div class="card__details">
+              <p class="color--white ls-2 cvvNum">000</p>
+            </div>
+          </div>
+          <div class="card card--two">
+            <img src="images/bg-card-front.png" alt="" class="card__img" />
+            <div class="card__details row">
+              <div class="row">
+                <div class="circle circle--lg bg--white"></div>
+                <div class="circle circle--sm"></div>
+              </div>
+              <div class="card__details__text">
+                <h1 class="heading--large color--white fw-500 ls-2 cardNum">
+                  0000 0000 0000 0000
+                </h1>
+                <div class="row">
+                  <p class="color--white ls-2 name">Jane Appleseed</p>
+                  <p class="color--white ls-2"><span class="cardMonth">00</span>/<span class="cardYear">00</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__col bg--white">
+          <form action="result.html" class="form row">
+            <div class="form__box row">
+              <label for="username" class="heading--mid fw-700 ls-2"
+                >cardholder name</label
+              >
+              <input
+                type="text"
+                autocomplete="off"
+                name="username"
+                id="username"
+                placeholder="e.g. Jane Appleseed"
+              />
+              <div class="error color--input-error"></div>
+            </div>
+            <div class="form__box row">
+              <label for="number" class="heading--mid fw-700 ls-2"
+                >card number</label
+              >
+              <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="e.g. 1234 56789 9123 0000"
+              />
+              <div class="error color--input-error"></div>
+            </div>
+            <div class="form__row form__box">
+              <div class="form__col row">
+                <label for="date" class="heading--mid fw-700 ls-2 date--label"
+                  >exp. date (mm/yy)</label
+                >
+                <label for="cvv" class="heading--mid fw-700 ls-2 cvv--label">cvv</label>
+              </div>
+
+              <div class="form__col row">
+                <input type="text" name="month" id="month" placeholder="MM" />
+
+                <input type="text" name="year" id="year" placeholder="YY" />
+
+                <input type="text" name="cvv" id="cvv" placeholder="e.g. 123" />
+              </div>
+              <div class="form__col row">
+                <div class="error color--input-error"></div>
+                <div class="error color--input-error"></div>
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Confirm"
+              class="button bg--very-dark-violet color--white"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+  
+ 
+/ [A-Za-Z0-9._+-] +@[A-Za-Z0-9 -]+\. [a-z] {2,}/g
+  
+  Confirm
+
+  Thank you!
+  We've added your card details
+  Continue -->
+  </body>
+</html>

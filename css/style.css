@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.8rem;
+  overflow-x: hidden;
+
+}
+
+@media(min-width:1125px){
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/* Utility Classes */
+
+
+:root{
+
+}
+
+.heading--large{
+  font-size: 1.9rem;
+}
+
+@media(max-width:365px){
+  .heading--large{
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width:317px){
+  .heading--large{
+    font-size: 1.2rem;
+  }
+}
+
+.heading--mid{
+  font-size: 1.3rem;
+  color: hsl(278, 68%, 11%);
+}
+
+.ls-2{
+  letter-spacing: 2px;
+}
+
+.fw-500{
+  font-weight: 500;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.ta--center{
+  text-align: center;
+}
+
+.bg--white{
+  background-color:hsl(0, 0%, 100%);
+}
+
+.color--white{
+  color:hsl(0, 0%, 100%);
+}
+
+.bg--light-gray{
+  background-color: hsl(270, 3%, 87%);
+}
+
+.bg--dark-violet{
+  background-color: hsl(279, 6%, 55%);
+}
+
+.color--dark-violet{
+  color:  hsl(279, 6%, 55%);
+}
+
+.bg--very-dark-violet{
+  background-color: hsl(278, 68%, 11%);
+}
+
+.linear-gradient{
+  background:linear-gradient(hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+}
+
+.color--input-error{
+  color: hsl(0, 100%, 66%);
+}
+
+.row{
+  display: flex;
+}
+
+.button{
+  padding: 1.3rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 1.7rem;
+  transition: opacity 200ms ease-in-out;
+}
+
+
+.button:hover{
+  opacity: 0.9;
+}
+
+.container{
+  max-width: 1200px;
+  margin-inline: auto;
+  width: 100%;
+ 
+}
+
+@media(min-width:1125px){
+  .container{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10%); 
+  }
+}
+
+.container__row{
+  flex-direction: column;
+}
+
+@media(min-width:1125px){
+  .container__row{
+    flex-direction: row;
+    gap: 20%;
+    align-items: center;
+  }
+}
+
+.container__col--bg{
+  background-image: url('file:///C:/Users/GAUTAM/Desktop/Coding/Website%20Clones/Interactive%20Card/images/bg-main-mobile.png');
+  height: 31vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+@media(min-width:1125px){
+  .container__col--bg{
+    background-image: url('file:///C:/Users/GAUTAM/Desktop/Coding/Website%20Clones/Interactive%20Card/images/bg-main-desktop.png');
+    width: 33%;
+    height: 80vh;
+  }
+}
+
+
+@media(max-width:365px){
+  .container__col--bg{
+    height: 26vh;
+  }
+}
+
+
+.card{
+  width: 30rem;
+  position: absolute;
+}
+
+@media(max-width:385px){
+  .card{
+    width: 28rem;
+  }
+}
+
+@media(max-width:365px){
+  .card{
+    width: 24rem;
+  }
+
+  .card--one .card__details {
+    top: 32.5%;
+    left: 73%;
+}
+
+}
+
+
+@media(max-width:317px){
+  .card{
+    width: 21rem;
+  }
+}
+
+
+
+.card--one{
+  top: 14%;
+  left: 22%;
+}
+
+.card--two{
+  top: 50%;
+  left: 6%;
+}
+
+@media(min-width:850px){
+  .card--one{
+    left: 30%;
+  }
+
+  .card--two{
+    left: 20%;
+  }
+}
+
+@media(min-width:1125px){
+
+  .card--one{
+    top: 56%;
+    left: 67%;
+  }
+  .card--two{
+    top: 27%;
+    left: 48%;
+  }
+  
+}
+
+
+.card__img{
+  width: 100%;
+}
+
+
+.card--one .card__details{
+  top: 35.5%;
+  left: 75%;
+}
+
+@media(max-width:365px){
+ 
+  .card--one .card__details {
+    top: 32.5%;
+    left: 73%;
+}
+}
+@media(max-width:317px){
+ 
+  .card--one .card__details {
+    top: 29.5%;
+    left: 71%;
+}
+
+}
+
+.card__details{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.card__details .row:nth-child(1){
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.card__details p{
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.card__details .row:nth-child(2){
+  justify-content: space-between;
+  margin-top: 1rem;
+
+}
+
+.circle{
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.circle--lg{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+@media(max-width:317px){
+    .circle--lg {
+      width: 2.5rem;
+      height: 2.5rem;
+  }
+}
+
+.circle--sm{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media(max-width:317px){
+    .circle--sm {
+      width: 1rem;
+      height: 1rem;
+  }
+}
+
+.form{
+  gap: 2.5rem;
+}
+
+.form,
+.result{
+  padding: 8rem 2rem 2rem;
+  flex-direction: column;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+
+label{
+  text-transform: uppercase;
+}
+
+input{
+  /* margin: 0.5rem 0 2.5rem; */
+  padding: 0.9rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+
+input::-webkit-input-placeholder{
+  color: lightgray;
+
+}
+
+.form__col{
+  justify-content: space-between;
+}
+
+.date--label,
+.cvv--label,
+#month,
+#year{
+  width: 46%;
+}
+
+#year{
+  margin-inline: 1rem 2rem;
+}
+
+#cvv{
+  width: 100%;
+}
+
+
+.result img{
+  margin-inline: auto;
+}
+
+.result h2{
+  margin: 1.5rem 0;
+}
+
+
+.error{
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.form__col .error{
+  width: 45%;
+}
+
+
+.form__box{
+  flex-direction: column;
+}
