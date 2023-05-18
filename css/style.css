@@ -211,7 +211,7 @@ select {
 }
 
 .container__col--bg{
-  background-image: url('file:///C:/Users/GAUTAM/Desktop/Coding/Website%20Clones/Interactive%20Card/images/bg-main-mobile.png');
+  background-image: url('../images/bg-main-mobile.png');
   height: 31vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,7 +221,7 @@ select {
 
 @media(min-width:1125px){
   .container__col--bg{
-    background-image: url('file:///C:/Users/GAUTAM/Desktop/Coding/Website%20Clones/Interactive%20Card/images/bg-main-desktop.png');
+    background-image: url('../images/bg-main-desktop.png');
     width: 33%;
     height: 80vh;
   }
