@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+1.Desktop View
+![active-states](https://github.com/gauyash/interactive-card/assets/96402498/14ac9294-6d09-4b57-8057-a7ce25534f61)
 
 ## My process
 
